@@ -42,6 +42,9 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // Idea originated in the Udacity forums
+        // https://discussions.udacity.com/t/error-with-setting-buttons-contentmode-to-scaleaspectfit/208244/15
         slowButton.imageView?.contentMode = .scaleAspectFit
         fastButton.imageView?.contentMode = .scaleAspectFit
         lowPitchButton.imageView?.contentMode = .scaleAspectFit
